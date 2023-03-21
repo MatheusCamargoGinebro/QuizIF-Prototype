@@ -1,42 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto&display=swap');
-/*
-font-family: 'Poppins', sans-serif;
-font-family: 'roboto', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-html {
-    --cor0: #d8dbe3;
-    --cor1: #c0c5d6;
-    --cor2: #191d32;
-    --cor3: #282F44;
-    --cor4: #567A5C;
-    --cor5: #39564D;
-    
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
+textarea{
+    resize: none;
 }
 
 body::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  body::-webkit-scrollbar-track{
+}
+body::-webkit-scrollbar-track{
     background: var(--cor1);
-  }
-  
-  body::-webkit-scrollbar-thumb{
+}
+body::-webkit-scrollbar-thumb{
     background-color: var(--cor3);
     border-radius: 1px;
-  }
+}
 
+
+
+/*---------------------</> Header </>---------------------*/
 header {
     user-select: none;
     background: rgba(216, 219, 227, 0.2);
@@ -53,29 +32,25 @@ header {
     font-weight: 600;
     font-size: 18px;
 }
-
-.bg {
-    display: flexbox;
-    background-color: var(--cor0);
-    min-height: 100vh;
+header ul {
+    display: flex;
+    gap: 1.7rem;
+    align-items: center;
+}
+header a {
+    color: var(--cor2);
 }
 
 .logo {
     width: 12rem;
 }
 
-ul {
+.container_one {
+    padding-top: 5rem;
     display: flex;
-    gap: 1.7rem;
+    justify-content: center;
     align-items: center;
-}
-
-li {
-    list-style: none;
-}
-
-header a {
-    color: var(--cor2);
+    gap: 3rem;
 }
 
 .hover-underline-animation {
@@ -102,24 +77,14 @@ transform: scaleX(1);
 transform-origin: bottom left;
 }
 
-
-.container_one {
-    padding-top: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-
 #singUp{
     color: var(--cor0);
     background-color: var(--cor3);
     padding: 5px 8px;
-    border-radius: 7px;
+    border-radius: 8px;
     border: solid var(--cor0) 1px;
     transition: all .2s;
 }
-
 #singUp:hover{
     color: var(--cor3);
     background-color: var(--cor0);
@@ -128,23 +93,38 @@ transform-origin: bottom left;
 }
 
 
-/*===================================================================*/
+/*---------------------</> Body </>---------------------*/
+.bg{
+    display: flexbox;
+    background-color: var(--cor0);
+    min-height: 100vh;
+}
 
+
+
+/*===================================< Body-Divs >===================================*/
+
+
+/*---------------------</> Description-div </>---------------------*/
 .description{
     text-align: center;
-    padding: 4rem 0rem 6rem;
+    padding: 4rem 0rem 8rem;
     height: 15vh;
     font-family: 'Poppins', sans-serif;
     font-weight:bold;
 }
 
 
+
+/*---------------------</> Question-div </>---------------------*/
 .question{
     height: 75vh;
     display: flex;
     font-family: 'roboto', sans-serif;
 }
+
 .question-box1{
+    display: flex;
     text-align: center;
 
     width: 70%;
@@ -153,6 +133,7 @@ transform-origin: bottom left;
     border-radius: 0px 16px 16px 0px;
     margin-right: 3%;
 }
+
 .question-box2{
     width: 27%;
     
@@ -166,12 +147,41 @@ transform-origin: bottom left;
     -webkit-backdrop-filter: blur(4.1px);
 }
 
+.form{
+    /*background-color: red;*/
+    width: 60%;
+    height: 100%;
+}
+
+/*-----------</> Question-div-inputs </>-----------*/
+.text-field {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: var(--cor1);
+    background-color: var(--cor0);
+    color: var(--cor2);
+    border-style: solid;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px rgba(66,66,66,.75);
+}
+
+
+
+
+
+
+
+/*---------------------</> Partners-div </>---------------------*/
 .partners{
     height: 40vh;
     
     padding: 2rem;
 }
 
+
+
+/*---------------------</> Footer-Div </>---------------------*/
 .footer{
     height: 25vh;
     background-color: var(--cor2);

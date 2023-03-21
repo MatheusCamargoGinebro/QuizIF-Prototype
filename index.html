@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="assets/logo_border.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/basics.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>QuizIF</title>
 </head>
@@ -13,25 +14,27 @@
     <div class="bg">
         <header>
             <a href="/"><img class="logo" src="assets/QuizIF_7_maiusculo_e_lampada.png"></a>
-
-            <ul>
-                <a href="/" class="hover-underline-animation">
-                    <li>Home</li>
-                </a>
-                <a href="/data" class="hover-underline-animation">
-                    <li>Data</li>
-                </a>
-                <a href="/login" class="hover-underline-animation">
-                    <li>Sign in</li>
-                </a>
-                <a href="/signup">
-                    <li id="singUp">Sign up</li>
-                </a>
-            </ul>
+            <nav>
+                <ul>
+                    <a href="/" class="hover-underline-animation">
+                        <li>Home</li>
+                    </a>
+                    <a href="/data" class="hover-underline-animation">
+                        <li>Data</li>
+                    </a>
+                    <a href="/login" class="hover-underline-animation">
+                        <li>Sign in</li>
+                    </a>
+                    <a href="/signup">
+                        <li id="singUp">Sign up</li>
+                    </a>
+                </ul>
+            </nav>
         </header>
 
         <div class="description">
-            <h1>Bem vindo ao QuizIF</h1>
+            <h1>Bem vindo (a) ao QuizIF!</h1>
+            <h2>Nessa página, você pode cadastrar as questões.</h2>
         </div>
 
 
@@ -39,11 +42,20 @@
         <div class="question">
             <div class="question-box1">
                 <h2>Elaborando a Questão</h2>
-                <form action="#" method="get">
-
-                    <input type="text" name="question-title" placeholder="Título da Questão" id="questiontitle" name="questiontitle">
+                <form action="#" method="get" class="form">
                     
-                    <select name="subject" id="subject">
+
+                    <div class="field">
+                        <input class="text-field" type="text" placeholder="Título da questão" d="questiontitle" name="questiontitle"/>
+                        <p id="questiontitle-error" class="error-message">O Título precisa ter entre 1 e 50 caracteres.</p>
+                    </div>
+           
+
+
+                    <!---<
+                    <input type="text" name="question-title" placeholder="Título da Questão" id="questiontitle" class="text-field" name="questiontitle">
+                    
+                    <select name="subject" id="subject" class="text-field">
                         <option value="">Matéria</option>
                         <option value="subject01">Matemática</option>
                         <option value="subject02">Português</option>
@@ -60,9 +72,15 @@
                         <option value="subject13">Inglês</option>
                     </select>
 
-                    <textarea rows="15" cols="60" maxlength="1024" placeholder="Digite a Questão" wrap="hard"></textarea>
 
-                    <input type="submit" value="Enviar">
+
+                    <textarea name="question-description" id="question=description" class="text-field" cols="50" rows="10" placeholder="digite a descrição da questão..."></textarea>
+
+             
+                    <input type="submit" value="Cadastrar" id="input-btn">
+
+
+                    >--->
                 </form>
             </div>
 
