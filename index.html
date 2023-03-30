@@ -38,53 +38,97 @@
         </div>
 
 
-
         <div class="question">
             <div class="question-box1">
                 <h2>Elaborando a Questão</h2>
                 <form action="#" method="get" class="form">
-                    
+                    <div class="former">
+                        <div class="field">
+                            <input class="text-field mb-5" type="text" placeholder="Título da questão" d="questiontitle" name="questiontitle required"/>
+                            <p id="questiontitle-error" class="error-message warning">O Título precisa ter entre 1 e 100 caracteres.</p>
+                        </div>
 
-                    <div class="field">
-                        <input class="text-field" type="text" placeholder="Título da questão" d="questiontitle" name="questiontitle"/>
-                        <p id="questiontitle-error" class="error-message">O Título precisa ter entre 1 e 50 caracteres.</p>
                     </div>
-           
 
+                    <div class="former">
+                        <div class="field">
+                            <textarea name="question-description" id="question-description" placeholder="Digite a questão..."></textarea>
+                        </div>
 
-                    <!---<
-                    <input type="text" name="question-title" placeholder="Título da Questão" id="questiontitle" class="text-field" name="questiontitle">
+                    </div>
                     
-                    <select name="subject" id="subject" class="text-field">
-                        <option value="">Matéria</option>
-                        <option value="subject01">Matemática</option>
-                        <option value="subject02">Português</option>
-                        <option value="subject03">Geografia</option>
-                        <option value="subject04">História</option>
-                        <option value="subject05">Biologia</option>
-                        <option value="subject06">Química</option>
-                        <option value="subject07">Física</option>
-                        <option value="subject08">Sociologia</option>
-                        <option value="subject09">Banco de dados</option>
-                        <option value="subject10">Desenvolvimento Web Dinâmico</option>
-                        <option value="subject11">Linguagens de programação</option>
-                        <option value="subject12">Linguagens</option>
-                        <option value="subject13">Inglês</option>
-                    </select>
+                    <div class="former">
+                        <select name="subject" id="subject" class="text-field">
+                            <option value="">Matéria</option>
+                            <option value="subject01">Matemática</option>
+                            <option value="subject02">Português</option>
+                            <option value="subject03">Geografia</option>
+                            <option value="subject04">História</option>
+                            <option value="subject05">Biologia</option>
+                            <option value="subject06">Química</option>
+                            <option value="subject07">Física</option>
+                            <option value="subject08">Sociologia</option>
+                            <option value="subject09">Banco de dados</option>
+                            <option value="subject10">Desenvolvimento Web Dinâmico</option>
+                            <option value="subject11">Linguagens de programação</option>
+                            <option value="subject12">Linguagens</option>
+                            <option value="subject13">Inglês</option>
+                        </select>
 
 
+                        <div class="field">
+                            <input type="radio" name="questionlevel" id="questionlevel" />Dibas
+                            <input type="radio" name="questionlevel" id="questionlevel" />Fácil
+                            <input type="radio" name="questionlevel" id="questionlevel" />Médio
+                            <input type="radio" name="questionlevel" id="questionlevel" />Difícil
+                            <input type="radio" name="questionlevel" id="questionlevel" />Hard
+                            (Chora)
+                        </div>
+                        
+                        <div class="field">
+                            <input type="text" id="optiona" name="optiona" placeholder="Opção A" class="text-field"/>
+                        </div>
 
-                    <textarea name="question-description" id="question=description" class="text-field" cols="50" rows="10" placeholder="digite a descrição da questão..."></textarea>
+                        <div class="field">
+                            <input type="text" id="optionb" name="optionb" placeholder="Opção B" class="text-field"/>
+                        </div>
 
-             
-                    <input type="submit" value="Cadastrar" id="input-btn">
+                        <div class="field">
+                            <input type="text" id="optionc" name="optionc" placeholder="Opção C" class="text-field" />
+                        </div>
+                        
+                        <div class="field">
+                            <input
+                            type="text" id="optiond" name="optiond" placeholder="Opção D" class="text-field" />
+                        </div>
+                        
+                        <div class="field">
+                            <input type="text" id="optione" name="optione" placeholder="Opção E" class="text-field" />
+                        </div>
 
+                        <div class="field">
+                            <label>Opção correta</label>
+                            <input type="radio" name="correctoption" id="questiona" />A
+                            <input type="radio" name="correctoption" id="questionb" />B
+                            <input type="radio" name="correctoption" id="questionc" />C
+                            <input type="radio" name="correctoption" id="questiond" />D
+                            <input type="radio" name="correctoption" id="questione" />E
+                        </div>
+                    
 
-                    >--->
+                        <div class="field">
+                            <input type="button" value="Prévia" class="default-button secundary-button">
+                            <input type="submit" value="Enviar Questão" class="default-button primary-button">
+                        </div>
+                    </div>
                 </form>
+                
             </div>
 
             <div class="question-box2">
+                <h2>Digite a Questão</h2>
+                
+                </form>
             </div>
         </div>
 
@@ -95,6 +139,7 @@
     </div>
 
     <footer class="footer">
+        QuizIF desenvolvido pelas alunas e alunos do 2º ano de informática do IFSP Campinas
     </footer>
 
     <script src="./script/script.js"></script>

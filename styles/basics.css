@@ -38,4 +38,44 @@ html {
     margin-left: 5px;
 }
 
-/*OBS: o text-field está no styles.css mesmo... só pq eu pensei que fosse melhor :P*/
+.default-button{
+    margin: 10px;
+    width: 15rem;
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .2s;
+}
+
+.primary-button{
+    background-color: var(--cor3);
+    color: var(--cor0);
+    outline: none;
+    border: var(--cor3) solid 1px;
+}
+.primary-button:hover{
+    background-color: var(--cor0);
+    color: var(--cor3);
+}
+
+.secundary-button{
+    background-color: var(--cor0);
+    color: var(--cor3);
+    outline: none;
+    border: var(--cor3) solid 1px;
+}
+.secundary-button:hover{
+    background-color: var(--cor0);
+    border: var(--cor1) solid 1px;
+}
+
+.warning{
+    color: #ff0404e9;
+}
+
+#questiontitle-error{
+    display: block;
+}
