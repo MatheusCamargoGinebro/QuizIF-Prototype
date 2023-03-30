@@ -150,25 +150,26 @@ transform-origin: bottom left;
     -webkit-backdrop-filter: blur(4.1px);
 }
 
-.question textarea{
-    width: 425px;
-    height: 200px;
-    padding: 5px;
-    border-style: none;
-    outline: none;
-    margin: 10px;
-    border-radius: 3px;
-    margin: auto;
-    border: var(--cor2) solid 1px;
-}
-.question textarea:focus{
-    border: var(--cor4) solid 1px;
-}
-
 .form{
     margin: auto;
     margin-top: 3rem;
     height: 100%;
+}
+
+.infoquestion-div{
+    display: flex;
+    justify-content:space-evenly;/* 
+    background-color: red; */
+}
+
+#textarea-div{
+    width: 45%;/* 
+    background-color: yellow; */
+}
+#options-div{
+    width: fit-content;
+    min-width: 150px;/* 
+    background-color: green; */
 }
 
 /*-----------</> Question-div-inputs </>-----------*/
@@ -176,8 +177,7 @@ transform-origin: bottom left;
     margin-top: 1rem;
 }
 .text-field {
-
-    width: 425px;
+    width: 100%;
     margin-top: 2rem;
     font-size: 16px;
 
@@ -195,6 +195,10 @@ transform-origin: bottom left;
 
     transition: all .2s;
 }
+#questiontitle{
+    width: 90%;
+    min-width: 300px;
+}
 .text-field:hover{
     padding-left: 3px;
     padding-right: 3px;
@@ -204,7 +208,20 @@ transform-origin: bottom left;
     padding-right: 0px;
 }
 
+.question textarea{
+    width: 100%;
+    height: 45rem;
+    padding: 5px;
+    border-style: none;
+    outline: none;
+    border-radius: 3px;
+    border: var(--cor1) solid 1px;
 
+    transition: all .2s;
+}
+.question textarea:focus{
+    border: var(--cor4) solid 1px;
+}
 
 
 

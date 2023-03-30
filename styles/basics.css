@@ -66,9 +66,11 @@ html {
     color: var(--cor3);
     outline: none;
     border: var(--cor3) solid 1px;
+    
 }
 .secundary-button:hover{
-    background-color: var(--cor0);
+    background-color: var(--cor1);
+    color: var(--cor2);
     border: var(--cor1) solid 1px;
 }
 
