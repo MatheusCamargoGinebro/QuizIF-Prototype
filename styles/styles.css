@@ -176,8 +176,21 @@ transform-origin: bottom left;
 .field{
     margin-top: 1rem;
 }
-.text-field {
+.text-field{
     width: 100%;
+}
+#questiontitle{
+    text-align: center;
+    width: 90%;
+    min-width: 300px;
+}
+#questiontitle:focus{
+    border-bottom: 1px solid var(--cor4);
+    padding-left: 1;
+    padding-right: 4;
+}
+
+.text-field, #questiontitle{
     margin-top: 2rem;
     font-size: 16px;
 
@@ -195,17 +208,14 @@ transform-origin: bottom left;
 
     transition: all .2s;
 }
-#questiontitle{
-    width: 90%;
-    min-width: 300px;
-}
-.text-field:hover{
+.text-field:hover, #questiontitle:hover{
     padding-left: 3px;
     padding-right: 3px;
 }
 .text-field:focus{
     padding-left: 5px;
     padding-right: 0px;
+    border-bottom: 1px solid var(--cor4);
 }
 
 .question textarea{
