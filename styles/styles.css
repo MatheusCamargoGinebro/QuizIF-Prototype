@@ -95,7 +95,6 @@ transform-origin: bottom left;
 
 /*---------------------</> Body </>---------------------*/
 .bg{
-    display: flexbox;
     background-color: var(--cor0);
     min-height: 100vh;
 }
@@ -124,7 +123,7 @@ transform-origin: bottom left;
 }
 
 .question-box1{
-    display: flexbox;
+    
     text-align: center;
 
     width: 70%;
@@ -135,7 +134,7 @@ transform-origin: bottom left;
 }
 
 .question-box2{
-    display: flexbox;
+    
     text-align: center;
     width: 27%;
     padding: 2rem;
