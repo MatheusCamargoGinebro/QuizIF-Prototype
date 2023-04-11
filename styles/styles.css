@@ -60,16 +60,16 @@ header a {
 }
   
 .hover-underline-animation::after {
-content: '';
-position: absolute;
-width: 100%;
-transform: scaleX(0);
-height: 2px;
-bottom: 0;
-left: 0;
-background-color: var(--cor2);
-transform-origin: bottom right;
-transition: transform 0.25s ease-out;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor2);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
 .hover-underline-animation:hover::after {
@@ -94,133 +94,122 @@ transform-origin: bottom left;
 
 
 /*---------------------</> Body </>---------------------*/
-.bg{
+.bg {
     background-color: var(--cor0);
     min-height: 100vh;
 }
-
-
-
+  
 /*===================================< Body-Divs >===================================*/
-
-
+  
 /*---------------------</> Description-div </>---------------------*/
-.description{
+.description {
     text-align: center;
     padding: 4rem 0rem 8rem;
     height: 15vh;
     font-family: 'Poppins', sans-serif;
-    font-weight:bold;
+    font-weight: bold;
 }
-
-
-
+  
 /*---------------------</> Question-div </>---------------------*/
-.question{
+.question {
     height: fit-content;
     display: flex;
     font-family: 'roboto', sans-serif;
 }
-
-.question-box1{
-    
+  
+.question-box1 {
     text-align: center;
-
-    width: 70%;
+    width: 65%;
     padding: 2rem;
-
     border-radius: 0px 16px 16px 0px;
     margin-right: 3%;
 }
-
-.question-box2{
-    
+  
+.question-box2 {
+    justify-content: center;
     text-align: center;
-    width: 27%;
+    width: 32%;
     padding: 2rem;
-    
     border-radius: 16px 0px 0px 16px;
 }
-
-.question-box1, .question-box2{
+  
+.question-box1,
+.question-box2 {
     background: var(--cor0);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.1px);
     -webkit-backdrop-filter: blur(4.1px);
 }
-
-.form{
+  
+.form {
     margin: auto;
     margin-top: 3rem;
     height: 100%;
 }
-
-.infoquestion-div{
-    display: flex;
-    justify-content:space-evenly;/* 
-    background-color: red; */
+.former{
+    margin: auto;
 }
-
-#textarea-div{
-    width: 45%;/* 
-    background-color: yellow; */
+  
+#textarea-div {
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
-#options-div{
+  
+#options-div {
     width: fit-content;
-    min-width: 150px;/* 
-    background-color: green; */
+    min-width: 150px;
 }
-
-/*-----------</> Question-div-inputs </>-----------*/
-.field{
-    margin-top: 1rem;
+  
+  /*-----------</> Question-div-inputs </>-----------*/
+.field {
+    display: block;
+    margin-top: 2rem;
 }
-.text-field{
+  
+.text-field {
     width: 100%;
+    margin-top: 2rem;
+    font-size: 16px;
+    padding: 5px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    background-color: var(--cor0);
+    color: var(--cor2);
+    border-style: none;
+    border-color: var(--cor0);
+    border-bottom: 1px solid var(--cor2);
+    outline: none;
+    transition: all .2s;
 }
-#questiontitle{
+  
+.text-field:hover {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+  
+.text-field:focus {
+    padding-left: 5px;
+    padding-right: 0px;
+    border-bottom: 1px solid var(--cor4);
+}
+  
+#questiontitle {
     text-align: center;
     width: 90%;
     min-width: 300px;
 }
-#questiontitle:focus{
+  
+#questiontitle:focus {
     border-bottom: 1px solid var(--cor4);
     padding-left: 1;
     padding-right: 4;
-}
-
-.text-field, #questiontitle{
-    margin-top: 2rem;
-    font-size: 16px;
-
-    padding: 5px;
-    padding-bottom: 1px;
-    padding-left: 1px;
-
-    background-color: var(--cor0);
-    color: var(--cor2);
-    border-style: none;
-
-    border-color: var(--cor0);
-    border-bottom: 1px solid var(--cor2);
-    outline: none;
-
-    transition: all .2s;
-}
-.text-field:hover, #questiontitle:hover{
-    padding-left: 3px;
-    padding-right: 3px;
-}
-.text-field:focus{
-    padding-left: 5px;
-    padding-right: 0px;
-    border-bottom: 1px solid var(--cor4);
 }
 
 .question textarea{
     width: 100%;
     height: 45rem;
     padding: 5px;
+
     border-style: none;
     outline: none;
     border-radius: 3px;
@@ -234,15 +223,12 @@ transform-origin: bottom left;
 
 
 
-
 /*---------------------</> Partners-div </>---------------------*/
 .partners{
     height: 40vh;
     
     padding: 2rem;
 }
-
-
 
 /*---------------------</> Footer-Div </>---------------------*/
 .footer{

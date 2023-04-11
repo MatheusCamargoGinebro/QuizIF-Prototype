@@ -78,6 +78,8 @@ html {
     color: #ff0404e9;
 }
 
-#questiontitle-error{
-    display: block;
+
+/*IDs ERRORs XD*/
+#questiontitle-error, #textarea-error, #subject-error, #level-error, #optionA-error, #optionB-error, #optionC-error, #optionD-error, #optionE-error, #correctoption-error{
+    display: none;
 }

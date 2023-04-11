@@ -39,103 +39,104 @@
 
 
         <div class="question">
+            <form action="#" method="get" class="form"></form>
             <div class="question-box1">
                 <div id="div-title">
                     <h2>Elaborando a Questão</h2>
                 </div>
-
-                <form action="#" method="get" class="form">
-                    <div class="former">
-
-                        <div class="field" id="questiontitle-div">
-                            <input class="text-field mb-5" type="text" placeholder="Título da questão" id="questiontitle" name="questiontitle required"/>
-                            <p id="questiontitle-error" class="error-message warning">O Título precisa ter entre 1 e 100 caracteres.</p>
-                        </div>
-
+                <div class="former">
+                    <div class="field" id="questiontitle-div">
+                        <input class="text-field mb-5" type="text" placeholder="Título da questão" id="questiontitle" name="questiontitle required"/>
+                        <p id="questiontitle-error" class="error-message warning">O Título precisa ter entre 1 e 100 caracteres.</p>
                     </div>
-                    
-                    <div class="infoquestion-div">
-                        <div class="former" id="textarea-div">
-                            <div class="field">
-                                <textarea name="question-description" id="question-description" placeholder="Digite a questão..."></textarea>
-                            </div>
-
-                        </div>
-                        
-                        <div class="former" id="options-div">
-                            <select name="subject" id="subject" class="text-field">
-                                <option value="">Matéria</option>
-                                <option value="subject01">Matemática</option>
-                                <option value="subject02">Português</option>
-                                <option value="subject03">Geografia</option>
-                                <option value="subject04">História</option>
-                                <option value="subject05">Biologia</option>
-                                <option value="subject06">Química</option>
-                                <option value="subject07">Física</option>
-                                <option value="subject08">Sociologia</option>
-                                <option value="subject09">Banco de dados</option>
-                                <option value="subject10">Desenvolvimento Web Dinâmico</option>
-                                <option value="subject11">Linguagens de programação</option>
-                                <option value="subject12">Linguagens</option>
-                                <option value="subject13">Inglês</option>
-                            </select>
-
-
-                            <div class="field">
-                                <input type="radio" name="questionlevel" id="questionlevel" />Dibas
-                                <input type="radio" name="questionlevel" id="questionlevel" />Fácil
-                                <input type="radio" name="questionlevel" id="questionlevel" />Médio
-                                <input type="radio" name="questionlevel" id="questionlevel" />Difícil
-                                <input type="radio" name="questionlevel" id="questionlevel" />Hard
-                                (Chora)
-                            </div>
-                            
-                            <div class="field">
-                                <input type="text" id="optiona" name="optiona" placeholder="Opção A" class="text-field"/>
-                            </div>
-
-                            <div class="field">
-                                <input type="text" id="optionb" name="optionb" placeholder="Opção B" class="text-field"/>
-                            </div>
-
-                            <div class="field">
-                                <input type="text" id="optionc" name="optionc" placeholder="Opção C" class="text-field" />
-                            </div>
-                            
-                            <div class="field">
-                                <input
-                                type="text" id="optiond" name="optiond" placeholder="Opção D" class="text-field" />
-                            </div>
-                            
-                            <div class="field">
-                                <input type="text" id="optione" name="optione" placeholder="Opção E" class="text-field" />
-                            </div>
-
-                            <div class="field">
-                                <label>Opção correta</label>
-                                <input type="radio" name="correctoption" id="questiona" />A
-                                <input type="radio" name="correctoption" id="questionb" />B
-                                <input type="radio" name="correctoption" id="questionc" />C
-                                <input type="radio" name="correctoption" id="questiond" />D
-                                <input type="radio" name="correctoption" id="questione" />E
-                            </div>
-                        
-
-                            <div class="field">
-                                <input type="button" value="Prévia" class="default-button secundary-button">
-                                <input type="submit" value="Enviar Questão" class="default-button primary-button">
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                </div>
                 
+                <div class="former" id="textarea-div">
+                    <div class="field">
+                        <textarea name="question-description" id="question-description" placeholder="Digite a questão..."></textarea>
+                        <p id="textarea-error" class="error-message warning">A questão precisa ter entre 1 e 2048 caracteres.</p>
+                    </div>
+                </div>
             </div>
 
             <div class="question-box2">
-                <h2>Área livre :D</h2>
+                <h2>Mais detalhes</h2>
+                <div class="former" id="options-div">
+                    <div class="field">
+                        <select name="subject" id="subject" class="text-field">
+                            <option value="">Matéria</option>
+                            <option value="subject01">Matemática</option>
+                            <option value="subject02">Português</option>
+                            <option value="subject03">Geografia</option>
+                            <option value="subject04">História</option>
+                            <option value="subject05">Biologia</option>
+                            <option value="subject06">Química</option>
+                            <option value="subject07">Física</option>
+                            <option value="subject08">Sociologia</option>
+                            <option value="subject09">Banco de dados</option>
+                            <option value="subject10">Desenvolvimento Web Dinâmico</option>
+                            <option value="subject11">Linguagens de programação</option>
+                            <option value="subject12">Linguagens</option>
+                            <option value="subject13">Inglês</option>
+                        </select>
+                        <p id="subject-error" class="error-message warning">Você deve escolher uma das matérias para atribuir à questão.</p>
+                    </div>
+
+                    <div class="field">
+                        <label for="questionlevel" class="label-input">Dificuldade da questão:</label>
+                        <input type="radio" name="questionlevel" id="questionlevel" />Fácil
+                        <input type="radio" name="questionlevel" id="questionlevel" />Médio
+                        <input type="radio" name="questionlevel" id="questionlevel" />Difícil
+                        <p id="level-error" class="error-message warning">Você deve escolher uma dificuldade para a questão.</p>
+                    </div>
+                    
+                    <div class="option-list-div">
+                        <label for="option" class="label-input">Descrever opções:</label>
+                        <div class="field">
+                            <input type="text" id="optionA" name="optionA" placeholder="Opção A" class="text-field"/>
+                            <p id="optionA-error" class="error-message warning">A Opção deve conter entre 1 e 100 caracteres.</p>
+                        </div>
+    
+                        <div class="field">
+                            <input type="text" id="optionB" name="optionB" placeholder="Opção B" class="text-field"/>
+                            <p id="optionB-error" class="error-message warning">A Opção deve conter entre 1 e 100 caracteres.</p>
+                        </div>
+    
+                        <div class="field">
+                            <input type="text" id="optionC" name="optionC" placeholder="Opção C" class="text-field" />
+                            <p id="optionC-error" class="error-message warning">A Opção deve conter entre 1 e 100 caracteres.</p>
+                        </div>
+                        
+                        <div class="field">
+                            <input
+                            type="text" id="optionD" name="optionD" placeholder="Opção D" class="text-field" />
+                            <p id="optionD-error" class="error-message warning">A Opção deve conter entre 1 e 100 caracteres.</p>
+                        </div>
+                        
+                        <div class="field">
+                            <input type="text" id="optionE" name="optionE" placeholder="Opção E" class="text-field" />
+                            <p id="optionE-error" class="error-message warning">A Opção deve conter entre 1 e 100 caracteres.</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="field">
+                        <label for="correctoption" class="label-input">Opção correta:</label>
+                        <input type="radio" name="rightQuestion" id="rightQuestion" value="1" required />A
+                        <input type="radio" name="rightQuestion" id="rightQuestion" value="2" />B
+                        <input type="radio" name="rightQuestion" id="rightQuestion" value="3" />C
+                        <input type="radio" name="rightQuestion" id="rightQuestion" value="4" />D
+                        <input type="radio" name="rightQuestion" id="rightQuestion" value="5" />E
+                        <p id="correctoption-error" class="error-message warning">Você deve escolher qual será a opção correta.</p>
+                      </div>
                 
-                </form>
+
+                    <div class="field">
+                        <input type="submit" value="Enviar Questão" id="finish-button" class="default-button primary-button">
+                    </div>
+                </div>
             </div>
+        </form>
         </div>
 
         <div class="partners">
